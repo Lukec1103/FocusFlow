@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Focus Flow 0.5</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusFlow 0.5</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="container" id="landing-page">
-    <div class="toggle-container">
-      <input type="checkbox" id="toggle-mode">
-      <label for="toggle-mode" class="toggle-label"></label>
-    </div>
-    <h1 class="animated-title">
-      <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
-      <br/>
-      <span>t</span><span>o</span>
-      <br/>
-      <span>F</span><span>o</span><span>c</span><span>u</span><span>s</span><span>F</span><span>l</span><span>o</span><span>w</span><span>!</span>
-    </h1>
-    <button class="continue-btn" onclick="goToYearSelection()">Continue</button>
-  </div>
-
-  <div class="container hidden" id="year-selection">
-    <button class="back-btn" onclick="goBack('landing-page')">Back</button>
-    <div class="toggle-container toggle-under-back">
-      <input type="checkbox" id="toggle-mode-2">
-      <label for="toggle-mode-2" class="toggle-label"></label>
-    </div>
-    <h1>Choose the year</h1>
-    <div class="year-buttons" id="year-buttons">
-    </div>
-    <button class="small-btn" id="add-year-btn" onclick="showYearInput()">+</button>
-    <input type="number" id="year-input" class="hidden" placeholder="Enter Year">
-    <footer>Focus Flow 0.5</footer>
-  </div>
-
-  <div class="container hidden" id="month-page">
-    <button class="back-btn" onclick="goBack('year-selection')">Back</button>
-    <div class="toggle-container toggle-under-back">
-      <input type="checkbox" id="toggle-mode-3">
-      <label for="toggle-mode-3" class="toggle-label"></label>
-    </div>
-    <h1 id="year-title"></h1>
-    <div class="month-buttons">
-      <button class="month-btn" data-month="January">January</button>
-      <button class="month-btn" data-month="February">February</button>
-      <button class="month-btn" data-month="March">March</button>
-      <button class="month-btn" data-month="April">April</button>
-      <button class="month-btn" data-month="May">May</button>
-      <button class="month-btn" data-month="June">June</button>
-      <button class="month-btn" data-month="July">July</button>
-      <button class="month-btn" data-month="August">August</button>
-      <button class="month-btn" data-month="September">September</button>
-      <button class="month-btn" data-month="October">October</button>
-      <button class="month-btn" data-month="November">November</button>
-      <button class="month-btn" data-month="December">December</button>
-    </div>
-    <footer>Focus Flow 0.5</footer>
-  </div>
-
-  <div class="container hidden" id="todo-page">
-    <button class="back-btn" onclick="goBack('month-page')">Back</button>
-    <div class="toggle-container toggle-under-back">
-      <input type="checkbox" id="toggle-mode-4">
-      <label for="toggle-mode-4" class="toggle-label"></label>
-    </div>
-    <h1 id="month-title"></h1>
-    <div class="todo-container">
-      <input type="text" id="task-input" placeholder="Enter a task">
-      <ul id="task-list"></ul>
+    <div class="container" id="landing-page">
+        <div class="toggle-container">
+            <input type="checkbox" id="toggle-mode">
+            <label for="toggle-mode" class="toggle-label"></label>
+        </div>
+        <h1 class="animated-title">
+            <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+            <br/>
+            <span>t</span><span>o</span>
+            <br/>
+            <span>F</span><span>o</span><span>c</span><span>u</span><span>s</span><span>F</span><span>l</span><span>o</span><span>w</span><span>!</span>
+        </h1>
+        <button class="continue-btn" onclick="goToYearSelection()">Continue</button>
     </div>
 
-    <div class="routine-container">
-      <h2>Daily Routine</h2>
-      <div id="routine-list">
-      </div>
-      <button id="add-routine-btn" class="small-btn" onclick="addRoutineRow()">+</button>
+    <div class="container hidden" id="year-selection">
+        <button class="back-btn" onclick="goBack('landing-page')">Back</button>
+        <div class="toggle-container toggle-under-back">
+            <input type="checkbox" id="toggle-mode-2">
+            <label for="toggle-mode-2" class="toggle-label"></label>
+        </div>
+        <h1>Choose the year</h1>
+        <div class="year-buttons" id="year-buttons">
+        </div>
+        <button class="small-btn" id="add-year-btn" onclick="showYearInput()">+</button>
+        <input type="number" id="year-input" class="hidden" placeholder="Enter Year">
+        <footer>FocusFlow 0.5</footer>
     </div>
-    <footer>Focus Flow 0.5</footer>
-  </div>
 
-  <script src="script.js"></script>
+    <div class="container hidden" id="month-page">
+        <button class="back-btn" onclick="goBack('year-selection')">Back</button>
+        <div class="toggle-container toggle-under-back">
+            <input type="checkbox" id="toggle-mode-3">
+            <label for="toggle-mode-3" class="toggle-label"></label>
+        </div>
+        <h1 id="year-title"></h1>
+        <div class="month-buttons">
+            <button class="month-btn" data-month="January">January</button>
+            <button class="month-btn" data-month="February">February</button>
+            <button class="month-btn" data-month="March">March</button>
+            <button class="month-btn" data-month="April">April</button>
+            <button class="month-btn" data-month="May">May</button>
+            <button class="month-btn" data-month="June">June</button>
+            <button class="month-btn" data-month="July">July</button>
+            <button class="month-btn" data-month="August">August</button>
+            <button class="month-btn" data-month="September">September</button>
+            <button class="month-btn" data-month="October">October</button>
+            <button class="month-btn" data-month="November">November</button>
+            <button class="month-btn" data-month="December">December</button>
+        </div>
+        <footer>FocusFlow 0.5</footer>
+    </div>
+
+    <div class="container hidden" id="todo-page">
+        <button class="back-btn" onclick="goBack('month-page')">Back</button>
+        <div class="toggle-container toggle-under-back">
+            <input type="checkbox" id="toggle-mode-4">
+            <label for="toggle-mode-4" class="toggle-label"></label>
+        </div>
+        <h1 id="month-title"></h1>
+        <div class="todo-container">
+            <input type="text" id="task-input" placeholder="Enter a task">
+            <ul id="task-list"></ul>
+        </div>
+
+        <div class="routine-container">
+            <h2>Daily Routine</h2>
+            <div id="routine-list">
+            </div>
+            <button id="add-routine-btn" class="small-btn" onclick="addRoutineRow()">+</button>
+        </div>
+        <footer>FocusFlow 0.5</footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
