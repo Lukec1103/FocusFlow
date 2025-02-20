@@ -296,7 +296,7 @@ body.dark-mode li {
 .edit-btn {
   width: 40px;
   height: 40px;
-  background-color: #fc7e57; /* orange square */
+  background-color: #fc7e57; 
   border-radius: 8px;
   color: #fff;
   font-size: 20px;
@@ -315,7 +315,6 @@ body.dark-mode li {
   align-items: center;
 }
 
-/* Routine Container */
 .routine-container {
   padding: 15px;
   border-radius: 20px;
